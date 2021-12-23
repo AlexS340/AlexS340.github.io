@@ -7,5 +7,7 @@ window.onscroll = function showHeader() {
   } else {
     header.classList.remove('header_fixed');
   }
-
+  if (window.matchMedia('(max-width: 700px)').matches){
+    header.classList.remove('header_fixed');
+  }
 }
